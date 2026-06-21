@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KISM — Keep It Simple, Math</title>
+<link rel="stylesheet" href="kism.css">
+</head>
+<body>
+
+<div class="status offline" id="status">checking C++ server…</div>
+
+<div class="calculator">
+  <div class="brand">
+    <h1>KISM</h1>
+    <p>Keep It Simple, Math</p>
+  </div>
+
+  <div class="screen" id="screen">
+    <div class="expression" id="expression">&nbsp;</div>
+    <div class="result" id="result">0</div>
+  </div>
+
+  <div class="pad" id="pad">
+    <div class="row-fn" style="display:contents;">
+      <button data-action="log">log</button>
+      <button data-action="square">squared</button>
+      <button data-action="cube">cubed</button>
+      <button data-action="reconnect">Reconnect</button>
+      <button data-action="clear">Clear</button>
+    </div>
+
+    <button class="key-num" data-num="7">7</button>
+    <button class="key-num" data-num="8">8</button>
+    <button class="key-num" data-num="9">9</button>
+    <button class="key-op" data-action="divide">/</button>
+    <button class="key-trig" data-action="sin">sin</button>
+
+    <button class="key-num" data-num="4">4</button>
+    <button class="key-num" data-num="5">5</button>
+    <button class="key-num" data-num="6">6</button>
+    <button class="key-op" data-action="multiply">x</button>
+    <button class="key-trig" data-action="cos">cos</button>
+
+    <button class="key-num" data-num="1">1</button>
+    <button class="key-num" data-num="2">2</button>
+    <button class="key-num" data-num="3">3</button>
+    <button class="key-op" data-action="subtract">-</button>
+    <button class="key-trig" data-action="cot">cot</button>
+
+    <button class="key-num" data-num="0">0</button>
+    <button class="key-num" data-num=".">.</button>
+    <button class="key-op" data-action="percent">%</button>
+    <button class="key-op" data-action="add">+</button>
+    <button class="key-trig" data-action="equals">=</button>
+  </div>
+</div>
+
+<script src="kism.js"></script>
+</body>
+</html>
